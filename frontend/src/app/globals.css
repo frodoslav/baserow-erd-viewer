@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 245, 245, 245;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.react-flow__node {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__node-table {
+  background-color: white;
+  min-width: 200px;
+}
+
+.react-flow__node-table .header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+}
+
+.react-flow__node-table .content {
+  padding: 8px;
+}
+
+.react-flow__node-table .field {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.react-flow__node-table .field:last-child {
+  border-bottom: none;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: #4f46e5;
+} 
